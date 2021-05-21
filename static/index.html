@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="пицца, доставка пиццы, заказать пиццу, пицца заказать в офис, пицца на дом, купить пиццу, заказ пиццы, пиццерия, паста">
+  <meta name="description" content="Заказать пиццу в Нягани с доставкой рядом. Доставка пиццы в Нягани на дом, в офис от Pizza&Pasta.Нягань">
+  <title>Pizza&Pasta.Нягань</title>
+  <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="favicon/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+
+  <header class="header">
+    <div class="container">
+      <div class="header__wrapper">
+        <div class="header__logo">
+          <a href="#" title="Pizza&Pasta.Нягань">
+            <img src="image/logo.svg" height="72" alt="Pizza&Pasta.Нягань">
+            <span>Pizza&Pasta.Нягань</span>
+          </a>
+        </div>
+        <div class="header__info">
+          <a class="header__phone" href="tel:79325342222">
+            <img src="image/phone.svg" height="16" alt="phone">
+            <span>+7 (932) 534-22-22</span>
+          </a>
+          <span class="header__street">Ул.Строительная 2, Нягань</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="promo">
+    <div class="container">
+      <div class="promo__wrapper my-slider">
+        <div class="promo__item">
+          <p class="promo__text">
+            Бесплатная доставка при заказе от 999 <span class="rub">i</span>
+          </p>
+          <img class="promo__img" src="image/delivery.png" alt="delivery">
+        </div>
+        <div class="promo__item">
+          <p class="promo__text">
+            При самовывозе скидка на заказ 10%
+          </p>
+          <img class="promo__img" src="image/pizza.png" alt="delivery">
+        </div>
+        <div class="promo__item">
+          <p class="promo__text">
+            Заказ менее 999 <span class="rub">i</span> - стоимость доставки 100 <span class="rub">i</span>
+          </p>
+          <img class="promo__img" src="image/delivery_women.png" alt="delivery">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="pizza">
+    <div class="container">
+      <h1>Пиццы</h1>
+      <div class="pizza__wrapper">
+        <ul class="pizza__items"></ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="basket">
+    <div class="container backet-flex">
+      <div class="basket__wrapper">
+        <h2>Оформление заказа</h2>
+        <table class="basket__table">
+          <thead>
+            <tr>
+              <th class="text-left">Название</th>
+              <th>Цена</th>
+              <th>Кол-во</th>
+              <th>Сумма</th>
+            </tr>
+          </thead>
+          <tbody>
+          </tbody>
+        </table>
+      </div>
+      <form class="form-basket" action="/basket" method="POST">
+        <input class="form-input" type="text" name="name" placeholder="Ваше имя" required>
+        <input class="form-input" type="tel" name="phone" placeholder="+7(ХХХ) ХХХ-ХХ-ХХ" required>
+        <button class="form-button" type="submit">Заказать</button>
+      </form>
+    </div>
+  </section>
+  
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__wrapper">
+        <div class="footer__social-copyright">
+          <a href="https://vk.com/pizzaandpastangn">
+            <img src="image/vk.png" alt="vk">
+          </a>
+          <span class="footer__copyright">
+            © 2021 Pizza&Pasta.Нягань
+          </span>
+        </div>
+        <div class="footer__info">
+          <a class="footer__phone" href="tel:79325342222">
+            <img src="image/phone.svg" height="16" alt="phone">
+            <span>+7 (932) 534-22-22</span>
+          </a>
+          <span class="footer__street">Ул.Строительная 2, Нягань</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
